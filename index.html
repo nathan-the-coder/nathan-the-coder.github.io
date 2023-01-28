@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Motivational Quotes</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <h1>Motivational Quotes</h1>
+  <div id="quote"></div>
+  <button onclick="getQuote()">Get a new quote</button>
+  <script>
+    function getQuote() {
+      const quoteDiv = document.getElementById('quote');
+      fetch('https://api.quotable.io/random')
+        .then(response => response.json())
+        .then(data => {
+          quoteDiv.innerHTML = data.content;
+        });
+    }
+    getQuote();
+  </script>
+</body>
+</html>
