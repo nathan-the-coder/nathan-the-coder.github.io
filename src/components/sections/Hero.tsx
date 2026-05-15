@@ -21,8 +21,7 @@ export default function Hero() {
         </h1>
 
         <p className="mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-          Full-stack developer building modern web applications with React,
-          TypeScript, and Tailwind CSS.
+          Full-Stack Developer specializing in modern web ecosystems, API engineering, and automated workflows. Experienced in designing, building, and deploying live production applications using React, Nuxt, Flask, and Laravel to optimize institutional and community processes.
         </p>
 
         <div className="flex gap-4">

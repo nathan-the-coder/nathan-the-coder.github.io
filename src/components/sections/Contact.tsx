@@ -21,11 +21,11 @@ export default function Contact() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="mailto:hello@example.com" className={buttonVariants()}>
+              <a href="mailto:nathanielramos726@gmail.com" className={buttonVariants()}>
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2 h-4 w-4" />
-                hello@example.com
+                nathanielramos726@gmail.com
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={buttonVariants({ variant: 'outline' })}>
+              <a href="https://github.com/nathan-the-coder" target="_blank" rel="noopener noreferrer" className={buttonVariants({ variant: 'outline' })}>
                 <FontAwesomeIcon icon={faGithub} className="mr-2 h-4 w-4" />
                 GitHub
               </a>
@@ -41,7 +41,7 @@ export default function Contact() {
 
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <FontAwesomeIcon icon={faLocationDot} className="h-4 w-4" />
-              <span>San Francisco, CA</span>
+              <span>Baggao, Cagayan, Philippines</span>
             </div>
           </CardContent>
         </Card>

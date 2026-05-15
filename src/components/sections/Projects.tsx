@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFolderOpen, faArrowUpRightFromSquare, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faFolderOpen, faArrowUpRightFromSquare, faClipboard, faBus, faCalendarCheck, faRobot, faCheckCircle, faClock } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
   Card,
@@ -14,24 +14,55 @@ import { buttonVariants } from '@/components/ui/button'
 
 const projects = [
   {
-    title: 'Project Alpha',
-    description: 'A modern web application built with React and Node.js.',
-    tags: ['React', 'TypeScript', 'Node.js'],
-    repo: '#',
-    demo: '#',
+    title: 'Survey Profiling Tool',
+    description:
+      'A comprehensive data collection and demographic profiling platform built to streamline community surveys and handle administrative data handling with security and precision.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
+    icon: faClipboard,
+    repo: 'https://github.com/nathan-the-coder/survey-profiling-tool',
+    demo: 'https://survey-profiling-tool.vercel.app',
   },
   {
-    title: 'Project Beta',
-    description: 'An open-source tool for developers to streamline workflows.',
-    tags: ['Python', 'Docker', 'CLI'],
-    repo: '#',
+    title: 'E-Barker',
+    description:
+      'A localized web utility for managing digital dispatching, route updates, and terminal management for local transport, optimizing commuter coordination.',
+    tags: ['Vue.js', 'Nuxt', 'Tailwind CSS', 'Node.js'],
+    icon: faBus,
+    repo: 'https://github.com/nathan-the-coder/e-barker',
+    demo: 'https://e-barker-app.vercel.app',
   },
   {
-    title: 'Project Gamma',
-    description: 'A real-time dashboard with data visualization features.',
-    tags: ['React', 'D3.js', 'WebSocket'],
-    repo: '#',
-    demo: '#',
+    title: 'College Staff AMS',
+    description:
+      'A dedicated administrative dashboard to log, monitor, and manage attendance records for college staff, replacing manual paperwork with automated tracking.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
+    icon: faCalendarCheck,
+    repo: 'https://github.com/nathan-the-coder/college-staff-ams-client',
+    demo: 'https://ams-sigma-snowy.vercel.app',
+  },
+  {
+    title: 'Grox Chatbot',
+    description:
+      'An automated Facebook Messenger chatbot designed to handle instant messaging inquiries and provide automated contextual responses via webhooks.',
+    tags: ['Node.js', 'Meta Graph API', 'Webhooks'],
+    icon: faRobot,
+    repo: 'https://github.com/nathan-the-coder/grox-ai',
+  },
+  {
+    title: 'Todo API (Flask)',
+    description:
+      'A production-ready, lightweight backend RESTful API designed to manage task workflows, user authentication, and data operations.',
+    tags: ['Python', 'Flask', 'SQLAlchemy', 'PostgreSQL'],
+    icon: faCheckCircle,
+    repo: 'https://github.com/nathan-the-coder/todo-api-flask',
+  },
+  {
+    title: 'Attendance Tracker',
+    description:
+      'A QR code-based attendance checking system for precise check-in/check-out timestamp logging and historical attendance report generation.',
+    tags: ['Flutter', 'Dart', 'QR Code'],
+    icon: faClock,
+    repo: 'https://github.com/nathan-the-coder/attendance-tracker',
   },
 ]
 
@@ -49,7 +80,7 @@ export default function Projects() {
             <Card key={project.title} className="flex flex-col">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <FontAwesomeIcon icon={faCode} className="h-4 w-4 text-primary" />
+                  <FontAwesomeIcon icon={project.icon} className="h-4 w-4 text-primary" />
                   {project.title}
                 </CardTitle>
                 <CardDescription>{project.description}</CardDescription>
